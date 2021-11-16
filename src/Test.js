@@ -1,9 +1,9 @@
 import react, { useState, useEffect } from "react";
+import {List, ListItem} from "@mui/material";
 
 export default function Test(){
 
     const [locations, setLocations] = useState([]);
-    const [locationList, setLocationList] = useState([]);
 
     useEffect(() => {
         fetch("data/data.json")
@@ -17,18 +17,18 @@ export default function Test(){
       console.log(locations);
       //const firstName = locations[0].name
 
-      /*let locationsTemp = [];
-      for(let i = 0; i<locations.length; i++){
-        locationsTemp[i]=("<li>" + locations[i].name +"</li>");
-      }
-      setLocationList(locationsTemp);*/
+      const locationList = locations.map((place, ind) => (
+         <ListItem key={ind}>{place.name}</ListItem>
+      ))
+
+      console.log(locationList);
 
     return (
         <div>
             <h1>Test</h1>
-            <ul>
+            <List>
               {locationList}
-            </ul>
+            </List>
         </div>
     )
 }
