@@ -2,65 +2,65 @@
     {
         "id": 0,
         "name": "The Mall",
-        "Builders": [
+        "builders": [
             "Aero48", "Hyenaedon", "Predator", "Hypervolt", "Egguterra", "Avari", "Blarrgensnorf"
         ],
-        "Theme": "https://www.youtube.com/watch?v=bnXjh8cbnyg",
-        "Connections": [
+        "theme": "https://www.youtube.com/watch?v=bnXjh8cbnyg",
+        "connections": [
             "Brick Maze", "Freezer", "Yellow Halls", "Subway Train"
         ],
-        "Image": "public/images/0.png"
+        "image": "images/0.png"
     },
     {
         "id": 1,
         "name": "Brick Maze",
-        "Builders": [
+        "builders": [
             "Aero48", "Hyenaedon"
         ],
-        "Theme": "https://www.youtube.com/watch?v=B-FW86wB1AA",
-        "Connections": [
+        "theme": "https://www.youtube.com/watch?v=B-FW86wB1AA",
+        "connections": [
             "The Mall", "Water Tower", "Tunnel", "Void Creature", "Cabin in the Woods", "Fractal Pyramid", "White Desert"
         ],
-        "Image": "public/images/1.png"
+        "image": "images/1.png"
     },
     {
         "id": 2,
         "name": "Water Tower",
-        "Builders": [
+        "builders": [
             "Hyenaedon", "Predator"
         ],
-        "Theme": "",
-        "Connections": [
+        "theme": "",
+        "connections": [
             "Brick Maze", "Office in Japan", "PizzArea", "RTX World", "Color Craze Room", "Hotel", "Heart Room", "Storage Room", "Storage Room V2", "Machine Room", "Soul Bridge", "The Highest Point", "Laboratory"
         ],
-        "Image": "public/images/2.png"
+        "image": "images/2.png"
     },
     {
         "id": 3,
         "name": "Freezer",
-        "Builders": [
+        "builders": [
             "Aero48", "Hyenaedon"
         ],
-        "Theme": "",
-        "Connections": [
+        "theme": "",
+        "connections": [
             "The Mall"
         ],
-        "Image": "public/images/3.png"
+        "image": "images/3.png"
     },
     {
         "id": 4,
         "name": "Hotel",
-        "Builders": [
+        "builders": [
             "Blarrgensnorf"
         ],
-        "Theme": "https://youtu.be/F7RDvZ6SXig?list=PL1NCNBOfO0imJqZnRTzjDWUjxB9-9_54t",
-        "Connections": [
+        "theme": "https://youtu.be/F7RDvZ6SXig?list=PL1NCNBOfO0imJqZnRTzjDWUjxB9-9_54t",
+        "connections": [
             "Mexican Art Gallery",
             "Pool Room",
             "Luxury Apartments",
             "Water Tower"
         ],
-        "Image": "public/images/4.png"
+        "image": "images/4.png"
     }
 
 ]
