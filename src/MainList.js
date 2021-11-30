@@ -1,5 +1,7 @@
 import react, { useState, useEffect } from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
+import Description from "./Description";
+import "./main.css";
 
 export default function MainList(){
 
@@ -17,22 +19,25 @@ export default function MainList(){
       }, []);
 
       //Maps out divs containing data from locationsList
-      const locationList = locations.map((place, ind) => (
-         <div key={ind}>
-           <img src={place.image} width="200px"/>{place.name}
-           <Button 
-           variant = "contained" 
-           onClick={() => {
-            showDescription(place.id);
-          }}>Details</Button>
+      const locationList = locations.map((place) => (
+         <div key={place.id} class="listElement">
+           <div class="listElementPart"><img src={place.image} width="200px"/></div>
+           <div class="listElementPart">{place.name}</div>
+           <div class="listElementPart"a><Button 
+              variant = "contained" 
+              onClick={() => {
+                showDescription(place.id);
+              }}>Details</Button>
+            </div>
+           
         </div>
       ))
 
     return (
         <div>
-            <h1>Test</h1>
+            <h1>Liminal World</h1>
             <Grid container>
-              <Grid>
+              <Grid class="listPanel">
                 <Stack 
                 direction="column" 
                 divider={<Divider orientation="horizontal" flexItem />}
@@ -41,8 +46,10 @@ export default function MainList(){
                   {locationList}
                 </Stack>
               </Grid>
-              <Grid>
-                <h2>{currentItem.name}</h2>
+              <Grid class="infoPanel">
+                <Description 
+                  currentItem = {currentItem}
+                />
               </Grid>
             </Grid>
         </div>
