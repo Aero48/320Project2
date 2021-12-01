@@ -1,5 +1,6 @@
 import react, { useState, useEffect } from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
+import {useSpring, animated} from 'react-spring';
 import Description from "./Description";
 import "./main.css";
 
@@ -8,6 +9,8 @@ export default function MainList(){
     const [locations, setLocations] = useState([]); //List of locations from json file
     const [currentItem, setCurrentItem] = useState(0); //Contains data from the selected location
     const [descriptionBool, setDescriptionBool] = useState(false); //Whether the Description should be showing or not
+    const [currentColor, setCurrentColor] = useState("#9cccff");
+    const [targetColor, setTargetColor] = useState("");
 
     //Pulls the data from the json file
     useEffect(() => {
@@ -76,6 +79,4 @@ export default function MainList(){
       setCurrentItem(itemId)
       setDescriptionBool(true);
     }
-
-    
 }

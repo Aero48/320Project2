@@ -7,9 +7,10 @@
         ],
         "theme": "https://www.youtube.com/watch?v=bnXjh8cbnyg",
         "connections": [
-            "Brick Maze", "Freezer", "Yellow Halls", "Subway Train"
+            "Brick Maze", "Freezer", "Yellow Halls", "Subway Train", "Parking Garage"
         ],
-        "image": "images/0.png"
+        "image": "images/0.png",
+        "color": "#ff9191"
     },
     {
         "id": 1,
@@ -21,7 +22,8 @@
         "connections": [
             "The Mall", "Water Tower", "Tunnel", "Void Creature", "Cabin in the Woods", "Fractal Pyramid", "White Desert"
         ],
-        "image": "images/1.png"
+        "image": "images/1.png",
+        "color": "#9cccff"
     },
     {
         "id": 2,
@@ -33,7 +35,8 @@
         "connections": [
             "Brick Maze", "Office in Japan", "PizzArea", "RTX World", "Color Craze Room", "Hotel", "Heart Room", "Storage Room", "Storage Room V2", "Machine Room", "Soul Bridge", "The Highest Point", "Laboratory"
         ],
-        "image": "images/2.png"
+        "image": "images/2.png",
+        "color": "#9cccff"
     },
     {
         "id": 3,
@@ -45,7 +48,8 @@
         "connections": [
             "The Mall"
         ],
-        "image": "images/3.png"
+        "image": "images/3.png",
+        "color": "#9cccff"
     },
     {
         "id": 4,
@@ -60,7 +64,81 @@
             "Luxury Apartments",
             "Water Tower"
         ],
-        "image": "images/4.png"
+        "image": "images/4.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 5,
+        "name": "Main Street",
+        "builders": [
+            "Egguterra", "Aero48", "Blarrgensnorf", "Hyenaedon", "Hypervolt", "Connordore"
+        ],
+        "theme": "https://www.youtube.com/watch?v=ksJ931V0lYw",
+        "connections": [
+            "Parking Garage",
+            "Plus Tower",
+            "Tunnel"
+        ],
+        "image": "images/5.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 6,
+        "name": "Tunnel",
+        "builders": [
+            "Egguterra", "Aero48"
+        ],
+        "theme": "",
+        "connections": [
+            "Main Street",
+            "Soup 09 Forest",
+            "Brick Maze"
+        ],
+        "image": "images/6.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 7,
+        "name": "Plus Tower",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "",
+        "connections": [
+            "Main Street"
+        ],
+        "image": "images/7.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 8,
+        "name": "Soup 09 Forest",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "https://youtu.be/qvgUzONhVL4",
+        "connections": [
+            "Tunnel",
+            "Cringe Mart",
+            "7 Eggleven"
+        ],
+        "image": "images/8.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 9,
+        "name": "Cringe Mart",
+        "builders": [
+            "Egguterra", "Blarrgensnorf"
+        ],
+        "theme": "https://youtu.be/rjbJ3A1vZBA",
+        "connections": [
+            "Freezer",
+            "Soup 09 Forest",
+            "7 Eggleven"
+        ],
+        "image": "images/9.png",
+        "color": "#9cccff"
     }
 
 ]
