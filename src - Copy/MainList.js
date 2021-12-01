@@ -6,8 +6,8 @@ import "./main.css";
 export default function MainList(){
 
     const [locations, setLocations] = useState([]); //List of locations from json file
-    const [currentItem, setCurrentItem] = useState(0); //Contains data from the selected location
-    const [descriptionBool, setDescriptionBool] = useState(false); //Whether the Description should be showing or not
+    const [currentItem, setCurrentItem] = useState(locations[0]); //Contains data from the selected location
+    
 
     //Pulls the data from the json file
     useEffect(() => {
@@ -19,17 +19,6 @@ export default function MainList(){
           });
         
       }, []);
-
-      console.log(locations);
-
-      let description = null;
-
-      if(descriptionBool){
-        description = 
-        <div class="infoPanel">
-          <Description locations = {locations} currentItem = {currentItem} />
-        </div>
-      }
 
       //Maps out divs containing data from locationsList
       const locationList = locations.map((place) => (
@@ -65,7 +54,9 @@ export default function MainList(){
                 </div>
               </div>
               <div class="subContainer">
-                {description}
+                <div class="infoPanel">
+                  
+                </div>
               </div>
             </div>
         </div>
@@ -73,8 +64,7 @@ export default function MainList(){
 
     //Sets the current item to the one that was clicked on
     function showDescription(itemId){
-      setCurrentItem(itemId)
-      setDescriptionBool(true);
+      setCurrentItem(locations[itemId])
     }
 
     
