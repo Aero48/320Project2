@@ -2,6 +2,7 @@ import react, { useState, useEffect } from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
 import {useSpring, animated} from 'react-spring';
 import Description from "./Description";
+import LocationElement from "./LocationElement";
 import "./main.css";
 
 export default function MainList(){
@@ -9,8 +10,6 @@ export default function MainList(){
     const [locations, setLocations] = useState([]); //List of locations from json file
     const [currentItem, setCurrentItem] = useState(0); //Contains data from the selected location
     const [descriptionBool, setDescriptionBool] = useState(false); //Whether the Description should be showing or not
-    const [currentColor, setCurrentColor] = useState("#9cccff");
-    const [targetColor, setTargetColor] = useState("");
 
     //Pulls the data from the json file
     useEffect(() => {
@@ -19,8 +18,7 @@ export default function MainList(){
           .then((data) => {
             //store data
             setLocations(data);
-          });
-        
+          });  
       }, []);
 
       console.log(locations);
@@ -36,17 +34,7 @@ export default function MainList(){
 
       //Maps out divs containing data from locationsList
       const locationList = locations.map((place) => (
-         <div key={place.id} class="listElement">
-           <div class="listElementPart"><img src={place.image} width="200px"/></div>
-           <div class="listElementPart">{place.name}</div>
-           <div class="listElementPart"a><Button 
-              variant = "contained" 
-              onClick={() => {
-                showDescription(place.id);
-              }}>Details</Button>
-            </div>
-           
-        </div>
+        <LocationElement key = {place.id} place = {place} showDescription={showDescription}/>
       ))
 
     console.log(currentItem);
@@ -54,7 +42,7 @@ export default function MainList(){
         <div>
             <h1>Liminal World</h1>
             <div class="containerDiv">
-              <div class="subContainer">
+              <div class="subContainerLeft">
                 <div class="listPanel">
                   
                   <Stack 
@@ -67,7 +55,7 @@ export default function MainList(){
                   </Stack>
                 </div>
               </div>
-              <div class="subContainer">
+              <div class="subContainerRight">
                 {description}
               </div>
             </div>

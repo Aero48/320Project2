@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid} from "@mui/material";
+import {Grid,Stack,Divider} from "@mui/material";
 
 export default function Description(props){
     let locations = props.locations;
@@ -17,17 +17,30 @@ export default function Description(props){
     //console.log(currentItem);
     return(
         <div class = "infoDiv">
-            <img src={locations[currentItem].image} width="600px"/>
-            <h2>{locations[currentItem].name}</h2>
-            <h3>Builders:</h3>
-            <Grid container spacing={2}>
-                {buildersList}
-            </Grid>
+            <Stack 
+                  direction="column" 
+                  divider={<Divider orientation="horizontal" flexItem />}
+                  spacing={2}
+                  >
+            <div>
+                <img src={locations[currentItem].image} width="600px"/>
+                <h2>{locations[currentItem].name}</h2>
+            </div>
             
-            <h3>Connections:</h3>
-            <Grid>
-                {connectionsList}
-            </Grid>
+            <div>
+                <h3>Builders:</h3>
+                <Grid container spacing={2}>
+                    {buildersList}
+                </Grid>
+            </div>
+            
+            <div>
+                <h3>Connections:</h3>
+                <Grid container spacing={2}>
+                    {connectionsList}
+                </Grid>
+            </div>
+            </Stack>
             
         </div>
     );
