@@ -20,7 +20,7 @@ export default function Description(props){
             <Stack 
                   direction="column" 
                   divider={<Divider orientation="horizontal" flexItem />}
-                  spacing={2}
+                  spacing={0}
                   >
             <div>
                 <img src={locations[currentItem].image} width="600px"/>
@@ -34,7 +34,7 @@ export default function Description(props){
                 </Grid>
             </div>
             
-            <div>
+            <div style={{maxWidth: 600}}>
                 <h3>Connections:</h3>
                 <Grid container spacing={2}>
                     {connectionsList}

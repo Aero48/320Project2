@@ -1,6 +1,5 @@
 import react, { useState, useEffect } from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
-import {useSpring, animated} from 'react-spring';
 import Description from "./Description";
 import LocationElement from "./LocationElement";
 import "./main.css";
