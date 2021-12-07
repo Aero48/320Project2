@@ -1,7 +1,7 @@
 import react, { useState, useEffect } from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
-import Description from "./Description";
-import LocationElement from "./LocationElement";
+import Description from "./components/Description";
+import LocationElement from "./components/LocationElement";
 import "./main.css";
 
 export default function MainList(){

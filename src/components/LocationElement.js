@@ -1,6 +1,6 @@
 import React from "react";
 import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/material";
-import "./main.css";
+import "../main.css";
 
 export default function LocationElement(props){
     let place = props.place;
