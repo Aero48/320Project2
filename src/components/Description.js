@@ -1,13 +1,12 @@
 import React from "react";
 import {Grid,Stack,Divider} from "@mui/material";
+import Builders from "./Builders";
 
 export default function Description(props){
     let locations = props.locations;
     let currentItem = props.currentItem;
 
-    let buildersList = locations[currentItem].builders.map((builder) => (
-        <Grid item>{builder}</Grid>
-    ))
+    
 
     let connectionsList = locations[currentItem].connections.map((connection) => (
         <Grid item>{connection}</Grid>
@@ -27,19 +26,7 @@ export default function Description(props){
                 <h2>{locations[currentItem].name}</h2>
             </div>
             
-            <div>
-                <h3>Builders:</h3>
-                <Grid container spacing={2}>
-                    {buildersList}
-                </Grid>
-            </div>
-            
-            <div style={{maxWidth: 600}}>
-                <h3>Connections:</h3>
-                <Grid container spacing={2}>
-                    {connectionsList}
-                </Grid>
-            </div>
+            <Builders locations = {locations} currentItem = {currentItem}/>
             </Stack>
             
         </div>
