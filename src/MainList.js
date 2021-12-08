@@ -12,7 +12,7 @@ export default function MainList(){
 
     //Pulls the data from the json file
     useEffect(() => {
-        fetch("data/data.json")
+        fetch("./data/data.json")
           .then((result) => result.json())
           .then((data) => {
             //store data
@@ -26,7 +26,7 @@ export default function MainList(){
 
       if(descriptionBool){
         description = 
-        <div class="infoPanel">
+        <div className="infoPanel">
           <Description locations = {locations} currentItem = {currentItem} />
         </div>
       }
@@ -40,9 +40,9 @@ export default function MainList(){
     return (
         <div>
             <h1>Liminal World</h1>
-            <div class="containerDiv">
-              <div class="subContainerLeft">
-                <div class="listPanel">
+            <div className="containerDiv">
+              <div className="subContainerLeft">
+                <div className="listPanel">
                   
                   <Stack 
                   direction="column" 
@@ -54,7 +54,7 @@ export default function MainList(){
                   </Stack>
                 </div>
               </div>
-              <div class="subContainerRight">
+              <div className="subContainerRight">
                 {description}
               </div>
             </div>
