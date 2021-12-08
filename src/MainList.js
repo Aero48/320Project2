@@ -12,7 +12,7 @@ export default function MainList(){
 
     //Pulls the data from the json file
     useEffect(() => {
-        fetch("./data/data.json")
+        fetch("data/data.json")
           .then((result) => result.json())
           .then((data) => {
             //store data
@@ -20,7 +20,7 @@ export default function MainList(){
           });  
       }, []);
 
-      console.log(locations);
+      console.log("Locations: " + {locations});
 
       let description = null;
 
