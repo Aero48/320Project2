@@ -1,8 +1,11 @@
-import React from "react";
+import react, { useState, useEffect } from "react";
 import {Grid,Stack,Divider} from "@mui/material";
 import Builders from "./Builders";
 
 export default function Description(props){
+
+    //const [ShownInfo, setShownInfo] = useState("");
+    //let shownInfo = <Builders locations = {locations} currentItem = {currentItem}/>;
     let locations = props.locations;
     let currentItem = props.currentItem;
 
