@@ -1,19 +1,19 @@
 import React from "react";
 import {Grid} from "@mui/material"
 
-export default function Builders(props){
+export default function Connections(props){
     let locations = props.locations;
     let currentItem = props.currentItem;
 
-    let buildersList = locations[currentItem].builders.map((builder, ind) => (
-        <Grid item key = {ind}>{builder}</Grid>
+    let connectionsList = locations[currentItem].connections.map((connection, ind) => (
+        <Grid item key={ind}>{connection}</Grid>
     ))
 
     return(
         <div className="description-list">
-            <h3>Builders:</h3>
+            <h3>Connections:</h3>
             <Grid container spacing={2}>
-                {buildersList}
+                {connectionsList}
             </Grid>
         </div>
     );

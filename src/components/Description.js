@@ -1,20 +1,17 @@
 import react, { useState, useEffect } from "react";
-import {Grid,Stack,Divider} from "@mui/material";
+import {Grid,Stack,Divider,Button} from "@mui/material";
 import Builders from "./Builders";
+import Connections from "./Connections";
 
 export default function Description(props){
 
-    //const [ShownInfo, setShownInfo] = useState("");
     //let shownInfo = <Builders locations = {locations} currentItem = {currentItem}/>;
+    const [stateVar, setStateVar] = useState(0);
     let locations = props.locations;
     let currentItem = props.currentItem;
 
-    
+    let possibleComponents = [ <Builders  locations = {locations} currentItem = {currentItem}/>, <Connections  locations = {locations} currentItem = {currentItem}/>];
 
-    let connectionsList = locations[currentItem].connections.map((connection) => (
-        <Grid item>{connection}</Grid>
-    ))
-    
     //console.log(locations);
     //console.log(currentItem);
     return(
@@ -25,11 +22,32 @@ export default function Description(props){
                   spacing={0}
                   >
             <div>
-                <img src={locations[currentItem].image} width="600px"/>
+                <img src={locations[currentItem].image} width="500px"/>
                 <h2>{locations[currentItem].name}</h2>
+                
+            </div>
+            <div>
+            <div className="description-buttoncontainer">
+                <div>
+                    <Button 
+                        variant = "contained" 
+                        onClick={() => {
+                        setStateVar(0);
+                    }}>Builders</Button>
+                </div>
+                <div>
+                    <Button 
+                        variant = "contained" 
+                        onClick={() => {
+                        setStateVar(1);
+                    }}>Connections</Button>
+                </div>
+            
+            
+            </div>
+                {possibleComponents[stateVar]}
             </div>
             
-            <Builders locations = {locations} currentItem = {currentItem}/>
             </Stack>
             
         </div>

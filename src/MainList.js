@@ -32,8 +32,8 @@ export default function MainList(){
       }
 
       //Maps out divs containing data from locationsList
-      const locationList = locations.map((place) => (
-        <LocationElement key = {place.id} place = {place} showDescription={showDescription}/>
+      const locationList = locations.map((place, ind) => (
+        <LocationElement key = {ind} place = {place} showDescription={showDescription}/>
       ))
 
     console.log(currentItem);

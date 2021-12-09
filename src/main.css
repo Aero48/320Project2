@@ -56,5 +56,16 @@ h1, h2{
     100% {opacity: 100%;}
 }
 
+.description-buttoncontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.description-list{
+    max-width: 500px;
+}
+
 
 
