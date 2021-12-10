@@ -20,10 +20,10 @@ export default function MainList(){
           });  
       }, []);
 
-      console.log("Locations: " + {locations});
-
+      //initialize description as null so the component doesn't display on page reload
       let description = null;
 
+      //if the descriptionBool variable is true, display the description component on the screen.
       if(descriptionBool){
         description = 
         <div className="infoPanel">

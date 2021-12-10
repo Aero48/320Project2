@@ -2,6 +2,7 @@ import react, { useState, useEffect } from "react";
 import {Grid} from "@mui/material"
 
 export default function Connections(props){
+    //retrieve locations list and currentItem from props
     let locations = props.locations;
     let currentItem = props.currentItem;
 

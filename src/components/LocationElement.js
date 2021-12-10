@@ -3,8 +3,13 @@ import {List, ListItem, Button, Stack, Divider, Container, Grid} from "@mui/mate
 import "../main.css";
 
 export default function LocationElement(props){
+    //retrieve the location data for that element in the main list from props
     let place = props.place;
+
+    //bases the animation delay off of the id of the location
     let delay = place.id;
+
+    //activates the fadein animation
     const divStyle = {
         animationName: 'fadeIn',
         animationDuration: '1s',

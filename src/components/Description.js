@@ -11,10 +11,11 @@ export default function Description(props){
     let locations = props.locations;
     let currentItem = props.currentItem;
 
-    let possibleComponents = [ <Builders  locations = {locations} currentItem = {currentItem}/>, <Connections  locations = {locations} currentItem = {currentItem}/>, <Theme  locations = {locations} currentItem = {currentItem}/>];
+    //array of components so that the description can display one at a time.
+    let possibleComponents = [ <Builders  locations = {locations} currentItem = {currentItem}/>, 
+    <Connections  locations = {locations} currentItem = {currentItem}/>, 
+    <Theme  locations = {locations} currentItem = {currentItem}/>];
 
-    //console.log(locations);
-    //console.log(currentItem);
     return(
         <div class = "infoDiv">
             <Stack 
