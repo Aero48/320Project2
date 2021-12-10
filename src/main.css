@@ -67,5 +67,9 @@ h1, h2{
     max-width: 500px;
 }
 
+img {
+    border-radius: 10px;
+}
+
 
 

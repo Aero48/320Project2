@@ -31,7 +31,7 @@
         "builders": [
             "Hyenaedon", "Predator"
         ],
-        "theme": "",
+        "theme": "TBD",
         "connections": [
             "Brick Maze", "Office in Japan", "PizzArea", "RTX World", "Color Craze Room", "Hotel", "Heart Room", "Storage Room", "Storage Room V2", "Machine Room", "Soul Bridge", "The Highest Point", "Laboratory"
         ],
@@ -44,7 +44,7 @@
         "builders": [
             "Aero48", "Hyenaedon"
         ],
-        "theme": "",
+        "theme": "TBD",
         "connections": [
             "The Mall"
         ],
@@ -88,7 +88,7 @@
         "builders": [
             "Egguterra", "Aero48"
         ],
-        "theme": "",
+        "theme": "TBD",
         "connections": [
             "Main Street",
             "Soup 09 Forest",
@@ -103,7 +103,7 @@
         "builders": [
             "Egguterra"
         ],
-        "theme": "",
+        "theme": "TBD",
         "connections": [
             "Main Street"
         ],
@@ -138,6 +138,92 @@
             "7 Eggleven"
         ],
         "image": "images/9.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 10,
+        "name": "Heart Room",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "https://youtu.be/rJ-zybFwmdw",
+        "connections": [
+            "Bloody Nightmare Hall"
+        ],
+        "image": "images/10.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 11,
+        "name": "Bloody Nightmare Hall",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "https://www.youtube.com/watch?v=DwmvU32HFbU&ab_channel=MadoKage",
+        "connections": [
+            "Heart Room",
+            "Bathroom Staircase",
+            "Soul World",
+            "Oil Bedroom",
+            "Wizard Tower"
+        ],
+        "image": "images/11.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 12,
+        "name": "Starship",
+        "builders": [
+            "Hypervolt"
+        ],
+        "theme": "TBD",
+        "connections": [
+            "Arcade",
+            "Bloody Nightmare Hall",
+            "The Mall"
+        ],
+        "image": "images/12.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 13,
+        "name": "Bathroom Staircase",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "https://youtu.be/R0fvAaD8MI0",
+        "connections": [
+            "Bloody Nightmare Hall",
+            "Desert Tube"
+        ],
+        "image": "images/13.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 14,
+        "name": "Luxury Apartments",
+        "builders": [
+            "Hypervolt"
+        ],
+        "theme": "TBD",
+        "connections": [
+            "Hotel"
+        ],
+        "image": "images/14.png",
+        "color": "#9cccff"
+    },
+    {
+        "id": 15,
+        "name": "Desert Tube",
+        "builders": [
+            "Egguterra"
+        ],
+        "theme": "https://youtu.be/svG2TAmlufI",
+        "connections": [
+            "Bathroom Staircase",
+            "Future Home"
+        ],
+        "image": "images/15.png",
         "color": "#9cccff"
     }
 

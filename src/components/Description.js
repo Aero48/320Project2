@@ -2,6 +2,7 @@ import react, { useState, useEffect } from "react";
 import {Grid,Stack,Divider,Button} from "@mui/material";
 import Builders from "./Builders";
 import Connections from "./Connections";
+import Theme from "./Theme";
 
 export default function Description(props){
 
@@ -10,7 +11,7 @@ export default function Description(props){
     let locations = props.locations;
     let currentItem = props.currentItem;
 
-    let possibleComponents = [ <Builders  locations = {locations} currentItem = {currentItem}/>, <Connections  locations = {locations} currentItem = {currentItem}/>];
+    let possibleComponents = [ <Builders  locations = {locations} currentItem = {currentItem}/>, <Connections  locations = {locations} currentItem = {currentItem}/>, <Theme  locations = {locations} currentItem = {currentItem}/>];
 
     //console.log(locations);
     //console.log(currentItem);
@@ -41,6 +42,13 @@ export default function Description(props){
                         onClick={() => {
                         setStateVar(1);
                     }}>Connections</Button>
+                </div>
+                <div>
+                    <Button 
+                        variant = "contained" 
+                        onClick={() => {
+                        setStateVar(2);
+                    }}>Theme</Button>
                 </div>
             
             

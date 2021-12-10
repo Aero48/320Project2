@@ -10,6 +10,7 @@ export default function LocationElement(props){
         animationDuration: '1s',
         animationDelay: (delay*.1)+'s',
     }
+
     return(
         <div class="listElement" style={divStyle}>
            <div class="listElementPart"><img src={place.image} width="200px"/></div>
